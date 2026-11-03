@@ -253,13 +253,14 @@ body {
   align-self: center;
 }
 
-
 .features {
-  padding-top: 50px;
-  padding-bottom: 55px;
+  padding: 55px 0 50px;
+  background-color: #f6c445;
+  color: #3a2914;
 }
 
 .features ul {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -267,55 +268,48 @@ body {
 
 .feature-item {
   position: relative;
-  float: left;
-  width: 279px;
-  padding-top: 90px;
-  padding-right: 30px;
-  padding-left: 30px;
-  text-align: center;
-  border-left: 1px solid #d9d9d9;
+  flex: 1 1 33.33%;
+  box-sizing: border-box;
+  padding: 85px 28px 10px 0;
+  text-align: left;
 }
 
 .feature-item:first-child {
-  border-left-color: transparent;
+  border-left: none;
 }
 
-.feature-item::before {
-  content: "";
+.feature-item:not(:first-child) {
+  padding-left: 28px;
+}
+
+.feature-icon {
   position: absolute;
   top: 0;
-  left: 137px;
-  width: 65px;
-  height: 65px;
-  background-image: url("img/sprite.png");
-  background-repeat: no-repeat;
+  left: 0;
+  display: block;
 }
 
-.feature-choice::before {
-  background-position: -5px -5px;
-}
-
-.feature-quality::before {
-  background-position: -5px -76px;
-}
-
-.feature-safety::before {
-  background-position: 1px -143px;
+.feature-item:not(:first-child) .feature-icon {
+  left: 28px;
 }
 
 .feature-title {
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 12px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 30px;
-  font-family: "Georgia", serif;
-  color: #a38b70;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #3a2914;
 }
 
 .feature-item p {
   margin: 0;
+  font-size: 14px;
+  line-height: 22px;
 }
+
+
 
 .cat-reference {
   padding-top: 70px;
