@@ -467,128 +467,86 @@ body {
   text-transform: uppercase;
 }
 
-
-.popular-and-price {
-  padding-top: 70px;
-  padding-bottom: 90px;
-  background-color: #f2f2f2;
+.assortment {
+  padding: 70px 0 80px;
+  background-color: #ffffff;
 }
 
-.popular-and-price .container {
-  position: relative;
-}
-
-.popular-items {
-  margin-bottom: 50px;
-}
-
-.to-catalog {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.catalog-item {
-  position: relative;
-  float: left;
-  width: 262px;
-  margin-right: 48px;
-  padding: 15px 22px;
-  padding-top: 221px;
-
-  border: 1px solid #d8d8d8;
-}
-
-.catalog-item:last-child {
-  margin-right: 0;
-}
-
-.catalog-item img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 306px;
-  height: 206px;
-}
-
-.catalog-item h3 {
-  float: left;
-  max-width: 205px;
-  margin: 0;
-  margin-bottom: 20px;
-  font-size: 16px;
+.assortment .section-title {
+  margin: 0 0 40px;
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 42px;
+  text-transform: uppercase;
   color: #000000;
 }
 
-.catalog-item-price {
-  float: right;
-  max-width: 55px;
-  margin-bottom: 20px;
-}
-
-.catalog-item .btn {
-  width: 101px;
-  color: #ffffff;
-  background-color: #a38b70;
-}
-
-.catalog-item .btn:hover {
-  background-color: #8d745a;
-}
-
-.catalog-item .btn:active {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.catalog-item .btn-info {
-  float: left;
-  clear: left;
-}
-
-.catalog-item .btn-buy {
-  float: right;
-}
-
-.price-list {
+.assortment-table {
   width: 100%;
   border-collapse: collapse;
-  line-height: 30px;
 }
 
-.price-list th {
-  font-weight: normal;
+.assortment-table th,
+.assortment-table td {
+  padding: 18px 12px;
+  border-bottom: 1px solid #e8e8e8;
   font-size: 14px;
-  text-align: left;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+.assortment-table th {
+  padding-bottom: 12px;
+  font-weight: normal;
+  font-size: 12px;
   text-transform: uppercase;
-}
-
-.price-list td {
-  border: 1px solid #d8d8d8;
-}
-
-.price-list th,
-.price-list td {
-  padding: 10px 17px;
-}
-
-.price-list .price-number {
-  width: 15px;
+  color: #b5b5b5;
   text-align: center;
 }
 
-.price-list .price-name {
-  width: 422px;
+.assortment-table th.assortment-name {
+  text-align: left;
+}
+
+.assortment-name {
+  width: 46%;
+  text-align: left;
   font-weight: bold;
+  text-transform: uppercase;
   color: #000000;
 }
 
-.price-list .price-master {
-  width: 306px;
+.assortment-alkohol,
+.assortment-calories,
+.assortment-volume {
+  text-align: center;
+  color: #333333;
 }
 
-.price-list .price-cost {
-  width: 135px;
+.assortment-cost {
+  text-align: right;
+  color: #333333;
 }
+
+.assortment-table sup {
+  font-size: 0;
+  vertical-align: middle;
+}
+
+.badge-new {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 6px;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #111111;
+}
+
 
 .feedback {
   padding-top: 60px;
